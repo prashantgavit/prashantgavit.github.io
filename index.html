@@ -1,16 +1,77 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="2RwGCbvb0e1gcn-iIRHLrYZrGayCSJtC5pKg0O0JlXQ" />
     <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <title>Prashant Gavit </title>
+    <link rel="icon" type="image/png" href="http://cumc.p.cumcweb.org/sites/all/modules/custom/cumc_platform/modules/cumc_seo/files/cumc-crown.png">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
     <style type="text/css">
+        body {
+            background: #f8fafc;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%;
+            background: #ffffff;
+            color: #fefefe;
+            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            height: 56px;
+        }
+        .navbar-logo {
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 28px;
+        }
+        .navbar-links a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-weight: 500;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .navbar-links a:hover, .navbar-links a:focus {
+            color: #f09228;
+            border-bottom: 2px solid #f09228;
+        }
+        .circular_img {
+            margin-top: 20px;
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .section-card-header{
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
 
-    .circular_img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-    }
-    a {
+        a {
             color: #1772d0;
             text-decoration:none;
         }
@@ -20,42 +81,37 @@
         }
         body,td,th,tr,p,a {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
-            font-weight: 400
+            font-size: 15px;
+            font-weight: 400;
         }
         strong {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
-            font-weight: 800
+            font-size: 15px;
+            font-weight: 800;
         }
         heading {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
             font-size: 22px;
-            font-weight: 1000
+            font-weight: 1000;
+            color: #222c36;
+            letter-spacing: 1px;
         }
         papertitle {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
-            font-weight: 700
+            font-size: 15px;
+            font-weight: 700;
         }
         name {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
             font-size: 32px;
+            font-weight: 800;
+            color: #222c36;
         }
-        .one
-        {
-            width: 160px;
-            height: 160px;
-            position: relative;
-        }
-        .two
-        {
-            width: 160px;
-            height: 160px;
-            position: absolute;
-            transition: opacity .2s ease-in-out;
-            -moz-transition: opacity .2s ease-in-out;
-            -webkit-transition: opacity .2s ease-in-out;
+        .one {
+            margin-top: 10px;
+            width: 120px;
+            height: 120px;
+            position: top;
         }
         .fade {
             transition: opacity .2s ease-in-out;
@@ -65,207 +121,199 @@
         span.highlight {
             background-color: #ffffd0;
         }
+        /* Card style for sections */
+        .section-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            margin: 10px;
+            padding: 24px 24px;
+        }
+        @media (max-width: 900px) {
+            .navbar-container, table[width="800"] {
+                max-width: 100vw !important;
+                width: 100vw !important;
+                padding: 0 8px;
+            }
+            .section-card {
+                padding: 16px 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                padding: 8px 4px;
+            }
+            .navbar-links {
+                gap: 16px;
+                margin-top: 8px;
+            }
+            .circular_img {
+                width: 120px;
+                height: 120px;
+            }
+            name {
+                font-size: 22px;
+            }
+            heading {
+                font-size: 18px;
+            }
+            .section-card {
+                padding: 10px 2px;
+            }
+        }
     </style>
-    <link rel="icon" type="image/png" href="http://cumc.p.cumcweb.org/sites/all/modules/custom/cumc_platform/modules/cumc_seo/files/cumc-crown.png">
-    <title>Prashant Gavit </title>
-
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tbody><tr>
-        <td>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody><tr>
-                    <td width="67%" valign="middle">
-                        <p align="center">
-                            <name>
-                                Prashant Gavit </br>
-                            </name>
-                        </p>
-                    </td>
-                </tr>
-                </tbody></table>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="#">Prashant Gavit</a>
+            <div class="navbar-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="mailto:prashat.gavit@sjsu.edu">Contact</a>
+                <a href="https://prashantgavit.github.io/PrashantGavit_v4.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </nav>
+    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+            <td>
+                <div class="section-card" id="about">
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="100%" valign="middle" class="section-card-header">
+                                <heading>About Me</heading>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-            <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-                <tbody><tr>
-                    <td>
-                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                            <tbody><tr>
-                                <td width="90%" valign="middle">
-
-                                    <p>
-                                        I am a seasoned Data Scientist with over seven years of experience in the US healthcare and logistics sectors.
-                                        My expertise spans Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and team leadership,
-                                        through which I have made significant contributions to solving complex industry challenges.
-                                        I have led efforts to develop predictive and statistical models, recommendation systems, NLP solutions, and real-time data processing pipelines,
-                                        delivering impactful results at companies like BlackBuck and Innovaccer. With a strong academic foundation from IIT Madras and ongoing graduate
-                                        studies in Artificial Intelligence at San Jose State University,
-                                        I am passionate about applying AI and machine learning to address real-world problems.
-                                    </p>
-
-                                    <p>
-                                        I am currently pursuing a Master's in Artificial Intelligence at <a href="https://www.sjsu.edu/"> San Jose State University </a>,
-                                        with an expected graduation in December 2025. Prior to this, I earned both a B.Tech in Mechanical Engineering and an M.Tech in
-                                        Intelligent Manufacturing from the <a href="https://www.iitm.ac.in/"> Indian Institute of Technology Madras </a>, graduating in 2016.
-                                    </p>
-
-                                    <p align="center">
-                                        <a href="mailto:prashat.gavit@sjsu.edu"> Email </a> &nbsp;/&nbsp;
-                                        <a href="https://www.linkedin.com/in/prashant-gavit-3b3540118/">LinkedIN</a> &nbsp;/&nbsp;
-                                        <a href="https://github.com/prashantgavit">Github</a> &nbsp;/&nbsp;
-                                        <a href="https://prashantgavit.github.io/PrashantGavit_v4.pdf">Resume</a> &nbsp;&nbsp;
-
-                                    </p>
-                                </td>
-                                <td width="10%" valign="middle">
-                                    <img class="circular_img" src="images/sf_pp.jpg" alt="Profile Picture">
-                                </td>
-                            </tr>
-                            </tbody></table>
-                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                            <tbody><tr>
-                                <td width="100%" valign="middle">
-                                    <heading>Work Experience</heading>
-                                </td>
-                            </tr>
-
-                            </tbody></table>
-                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                            <tbody>
-                            <tr onmouseout="aws_stop()" onmouseover="aws_start()">
-                                <td width="25%">
-
-                                    <div class="one">
-                                        <div class="two" id="aws_image" style="opacity: 0;"><img src="images/blackbuck_logo.png"></div>
-                                        <img src="images/blackbuck_logo.png">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function aws_start() {
-                                            document.getElementById('aws_image').style.opacity = "1";
-                                        }
-                                        function aws_stop() {
-                                            document.getElementById('aws_image').style.opacity = "0";
-                                        }
-                                        capone_stop()
-                                    </script>
-
-                                </td>
-
-                                <td valign="top" width="75%">
-                                    <p><papertitle>Sr. Data Scientist ( <a href="https://www.blackbuck.com/"> Blackbuck </a> ) </papertitle><br> April 2022 - July 2023
-
-
-                                    </p><p></p>
-
-                                    <p>
-                                        <li>Introduced and deployed a multi-objective recommendation system for trucker-shipper marketplace application
-                                        to capture user preferences over diversity, relevance, and new shippers by designing a contextual multi-armed
-                                            bandits model, using the Vowpal Wabbit framework, AWS SageMaker, and AWS Athena.</li>
-                                        <li>Developed a real-time GPS data outlier detection system capable of detecting 95% of noise data while compromising
-                                            only 0.1% real pings, by implementing a Dynamic Kalman filter and replicating Python's FilterPy library in Java</li>
-                                        <li> Improved the NDCG metric of a recommendation system by 3%, by developing a semantic representation of product
-                                            entities using a GloVe model and utilizing semantics to build features for the recommendation model.</li>
-                                        <li> Developed a truck availability model using LSTM and Attention on PyTorch with 100k truck's GPS and user
-                                        activity data, leveraging short and long-term features to predict availability. Achieved 84% accuracy and 81% recall,
-                                            which improved booking page actions (calls, clicks, bids) by 4%.</li>
-                                    </p>
-
-
-
-                                </td>
-                            </tr>
-
-                            </tbody></table>
-                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                            <tbody>
-                            <tr onmouseout="capone_stop()" onmouseover="capone_start()">
-                                <td width="25%">
-
-                                    <div class="one">
-                                        <div class="two" id="capone_image" style="opacity: 0;"><img src="images/innova_solutions_logo.png"></div>
-                                        <img src="images/innova_solutions_logo.png">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function capone_start() {
-                                            document.getElementById('capone_image').style.opacity = "1";
-                                        }
-                                        function capone_stop() {
-                                            document.getElementById('capone_image').style.opacity = "0";
-                                        }
-                                        capone_stop()
-                                    </script>
-
-                                </td>
-
-                                <td valign="top" width="75%">
-                                    <p><papertitle>Technical Lead, Innova Solutions  ( <a href="https://www.innovasolutions.com/"> Innova Solution </a> ) </papertitle><br> September 2021 - March 2022
-
-
-                                    </p><p></p>
-
-                                    <p>
-                                        <li> Developed a single-point access data lake of de-identified US healthcare data, coming from multiple data sources using
-                                            an AWS Athena data pipeline, AWS Lake Formation, and data mesh architecture. </li>
-                                        <li> Integraed the data lake with AWS Sagemaker Studio, Apache Superset, Microsoft Power BI and Tableau to enable
-                                            teams of data scientists to build ML models and visualizations.</li>
-                                    </p>
-
-
-
-                                </td>
-                            </tr>
-
-                            </tbody></table>
-                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                            <tbody>
-                            <tr onmouseout="spotify_stop()" onmouseover="spotify_start()">
-                                <td width="25%">
-
-                                    <div class="one">
-                                        <div class="two" id="spotify_image" style="opacity: 0;"><img src="images/inno_logo.png"></div>
-                                        <img src="images/inno_logo.png">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function spotify_start() {
-                                            document.getElementById('spotify_image').style.opacity = "1";
-                                        }
-                                        function spotify_stop() {
-                                            document.getElementById('spotify_image').style.opacity = "0";
-                                        }
-                                        spotify_stop()
-                                    </script>
-
-                                </td>
-
-                                <td valign="top" width="75%">
-                                    <p><papertitle>Sr. Data Scientist ( <a href="https://innovaccer.com/"> Innovaccer </a> ) </papertitle><br>June 2016 - August 2021
-                                    </p><p></p>
-                                    <li>Led a team of data scientists to develop Patient Identity Management and Risk Management solutions. Helping
-                                        Healthcare practitioners and payers in population health management in a value-based care setting.</li>
-                                    <li>Defined and developed an Index to evaluate regional social vulnerability risk using the Principal Component
-                                        Analysis, to help physicians prioritize patients having the same clinical condition but different socio-economic status.</li>
-                                    <li>Trained a bidirectional LSTM model, using patient's historical clinical encounters data to predict the onset of
-                                        congestive heart failure. Achieved an AUC-ROC of 0.85 with the model.</li>
-                                    <li>Accelerated release time for CMS-HCC, HCC-HCC, and CDPS models from 1 month to 2 days by creating a
-                                        framework that transformed logical metadata from SAS files into dynamic configurations for the Python codebase,
-                                        streamlining the entire deployment process.</li>
-                                    <li>Designed and implemented a microservice architecture with AWS Lambda and PostgreSQL, replacing Spark-based
-                                        model scoring with Python-based development, reducing deployment time and dependency on data engineering.</li>
-                                    <li>Spearheaded the development of a Healthcare Data Insights Dashboard on Microsoft Power BI at Innovaccer,
-                                        delivering actionable patient data insights for Accountable Care Organization (ACO) leadership.</li>
-
-
-                                    <p>
-
-
-
-                                </td>
-                            </tr>
-
-                            </tbody></table>
-                </tr>
-                </tbody></table>
-
-
-</body></html>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="90%" valign="middle">
+                                <p>
+                                    I am a seasoned Data Scientist with over seven years of experience in the US healthcare and logistics sectors.
+                                    My expertise spans Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and team leadership,
+                                    through which I have made significant contributions to solving complex industry challenges.
+                                    I have led efforts to develop predictive and statistical models, recommendation systems, NLP solutions, and real-time data processing pipelines,
+                                    delivering impactful results at companies like BlackBuck and Innovaccer. With a strong academic foundation from IIT Madras and ongoing graduate
+                                    studies in Artificial Intelligence at San Jose State University,
+                                    I am passionate about applying AI and machine learning to address real-world problems.
+                                </p>
+                                <p>
+                                    I am currently pursuing a Master's in Artificial Intelligence at <a href="https://www.sjsu.edu/"> San Jose State University </a>,
+                                    with an expected graduation in December 2025. Prior to this, I earned both a B.Tech in Mechanical Engineering and an M.Tech in
+                                    Intelligent Manufacturing from the <a href="https://www.iitm.ac.in/"> Indian Institute of Technology Madras </a>, graduating in 2016.
+                                </p>
+                                <p align="center">
+                                    <a href="mailto:prashat.gavit@sjsu.edu"> Email </a> &nbsp;/&nbsp;
+                                    <a href="https://www.linkedin.com/in/prashant-gavit-3b3540118/">LinkedIN</a> &nbsp;/&nbsp;
+                                    <a href="https://github.com/prashantgavit">Github</a> &nbsp;/&nbsp;
+                                    <a href="https://prashantgavit.github.io/prashant_gavit.pdf">Resume</a> &nbsp;&nbsp;
+                                </p>
+                            </td>
+                            <td width="10%" valign="top">
+                                <img class="circular_img" src="images/sf_pp.jpg" alt="Profile Picture">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section-card" id="experience">
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="100%" valign="middle" >
+                                <heading>Work Experience</heading>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="25%", valign = "top">
+                                <div class="one">
+                                    <img src="images/blackbuck_logo.png">
+                                </div>
+                            </td>
+                            <td valign="top" width="75%">
+                                <p><papertitle>Sr. Data Scientist ( <a href="https://www.blackbuck.com/"> Blackbuck </a> ) </papertitle><br> April 2022 - July 2023</p>
+                                <p>
+                                    <li>Introduced and deployed a multi-objective recommendation system for trucker-shipper marketplace application
+                                    to capture user preferences over diversity, relevance, and new shippers by designing a contextual multi-armed
+                                        bandits model, using the Vowpal Wabbit framework, AWS SageMaker, and AWS Athena.</li>
+                                    <li>Developed a real-time GPS data outlier detection system capable of detecting 95% of noise data while compromising
+                                        only 0.1% real pings, by implementing a Dynamic Kalman filter and replicating Python's FilterPy library in Java</li>
+                                    <li> Improved the NDCG metric of a recommendation system by 3%, by developing a semantic representation of product
+                                        entities using a GloVe model and utilizing semantics to build features for the recommendation model.</li>
+                                    <li> Developed a truck availability model using LSTM and Attention on PyTorch with 100k truck's GPS and user
+                                    activity data, leveraging short and long-term features to predict availability. Achieved 84% accuracy and 81% recall,
+                                        which improved booking page actions (calls, clicks, bids) by 4%.</li>
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="25%" valign = "top">
+                                <div class="one">
+                                    <img src="images/innova_solutions_logo.png">
+                                </div>
+                            </td>
+                            <td valign="top" width="75%">
+                                <p><papertitle>Technical Lead, Innova Solutions  ( <a href="https://www.innovasolutions.com/"> Innova Solution </a> ) </papertitle><br> September 2021 - March 2022</p>
+                                <p>
+                                    <li> Developed a single-point access data lake of de-identified US healthcare data, coming from multiple data sources using
+                                        an AWS Athena data pipeline, AWS Lake Formation, and data mesh architecture. </li>
+                                    <li> Integraed the data lake with AWS Sagemaker Studio, Apache Superset, Microsoft Power BI and Tableau to enable
+                                        teams of data scientists to build ML models and visualizations.</li>
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                        <tr>
+                            <td width="25%" valign = "top">
+                                <div class="one">
+                                    <img src="images/innovaccer-logo.png">
+                                </div>
+                            </td>
+                            <td valign="top" width="75%">
+                                <p><papertitle>Sr. Data Scientist ( <a href="https://innovaccer.com/"> Innovaccer </a> ) </papertitle><br>June 2016 - August 2021</p>
+                                <li>Led a team of data scientists to develop Patient Identity Management and Risk Management solutions. Helping
+                                    Healthcare practitioners and payers in population health management in a value-based care setting.</li>
+                                <li>Defined and developed an Index to evaluate regional social vulnerability risk using the Principal Component
+                                    Analysis, to help physicians prioritize patients having the same clinical condition but different socio-economic status.</li>
+                                <li>Trained a bidirectional LSTM model, using patient's historical clinical encounters data to predict the onset of
+                                    congestive heart failure. Achieved an AUC-ROC of 0.85 with the model.</li>
+                                <li>Accelerated release time for CMS-HCC, HCC-HCC, and CDPS models from 1 month to 2 days by creating a
+                                    framework that transformed logical metadata from SAS files into dynamic configurations for the Python codebase,
+                                    streamlining the entire deployment process.</li>
+                                <li>Designed and implemented a microservice architecture with AWS Lambda and PostgreSQL, replacing Spark-based
+                                    model scoring with Python-based development, reducing deployment time and dependency on data engineering.</li>
+                                <li>Spearheaded the development of a Healthcare Data Insights Dashboard on Microsoft Power BI at Innovaccer,
+                                    delivering actionable patient data insights for Accountable Care Organization (ACO) leadership.</li>
+                                <p></p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
