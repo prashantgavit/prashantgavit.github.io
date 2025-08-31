@@ -67,10 +67,10 @@ a:focus, a:hover {
     color: #f09228;
     text-decoration:none;
 }
-body,td,th,tr,p,a {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 15px;
+body, h1, h2, h3, h4, h5, h6, .navbar, .navbar-logo, .navbar-links, .section-card, p, a, li, heading, papertitle {
+    font-family: 'Titillium Web', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     font-weight: 400;
+    letter-spacing: 0.01em;
 }
 strong {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
